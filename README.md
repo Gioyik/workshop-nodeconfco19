@@ -12,9 +12,15 @@ Aprenderemos a analizar y diagnosticar problemas de cuello de botella, deteriora
 * `ndb`: Specially for Profiling
 
 
-install N|Solid in Mac using Brew
+Install N|Solid in Mac using Brew
 ```
 brew tap nodesource/nsolid
 
 brew install nsolid-console
+```
+
+Install n|Solid and running in Windows(needed docker)
+
+```
+docker run -d -p 9001-9003:9001-9003 -p 6743:6753 -v /path/to/persistent/console:/var/lib/nsolid/console --name console --network docker_nsolid nodesource/nsolid-console
 ```
