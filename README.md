@@ -10,3 +10,11 @@ Aprenderemos a analizar y diagnosticar problemas de cuello de botella, deteriora
 * `wrk`: Load test.
 * `N|Solid`: Install the latest version.
 * `ndb`: Specially for Profiling
+
+
+install N|Solid in Mac using Brew
+```
+brew tap nodesource/nsolid
+
+brew install nsolid-console
+```
