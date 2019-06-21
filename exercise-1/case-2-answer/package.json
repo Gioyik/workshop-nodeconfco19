@@ -1,0 +1,13 @@
+{
+  "name": "slow-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "NodeSource",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "restify": "^4.0.3"
+  },
+  "devDependencies": {}
+}

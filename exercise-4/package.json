@@ -1,0 +1,15 @@
+{
+  "name": "leak-hunting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "siege": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "overload": "timeout 30s siege http://localhost:3000"
+  },
+  "author": "",
+  "license": "ISC"
+}
