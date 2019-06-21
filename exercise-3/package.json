@@ -1,0 +1,19 @@
+{
+  "name": "workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "load-express": "autocannon -c 10 -d 5 -p 10 http://localhost:3001/carts/11",
+    "init-mongodb": "docker run --name mongo-workshop -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret -d mongo",
+    "start-mongodb": "docker start mongo-workshop",
+    "stop-mongodb": "docker stop mongo-workshop",
+    "docker-nsolid": "docker run -d -p 9001-9003:9001-9003 -p 6743:6753 -v /path/to/persistent/console:/var/lib/nsolid/console --name console --network docker_nsolid nodesource/nsolid-console"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^4.0.0"
+  }
+}
