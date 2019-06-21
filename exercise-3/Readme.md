@@ -2,9 +2,9 @@
 
 Requisitos:
 
-instalar artillery globalmente
+instalar autocannon globalmente
 ```
-npm install artillery -g
+npm install autocannon -g
 ```
 
 condiciones de chequeos
@@ -26,20 +26,7 @@ ExpressJS
 		http://localhost:3001/load  carga data en MongoDB
 		http://localhost:3001/carts/<id> retorna el precio total del carrito, basado en su ID
 	ahora vamos a hacer profiling
-	
+
 	npm run dev-nsolid, sólo eso...guao!!!!!
 	ir a la consola http://localhost:6753
-	
 
-NextJS
-	ir dentro de la carpeta /next: cd next
-	npm install
-	npm run dev
-	hay dos tipo de páginas
-		una con http://localhost:3000 y http://localhost:300/ioblock
-
-
-Artillery https://artillery.io/
-	los escenesarios de carga son creado en la carpeta artillery.
-	- next.yml
-	- -next-ioblock.yml
