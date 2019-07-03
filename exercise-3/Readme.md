@@ -18,7 +18,7 @@ docker --version => 18 or higher
 Herramientas utilizadas
 
 ExpressJS
-	ir dentro de la carpeta /express: cd express
+	dentro de la carpeta exercise-3, mostraremos un ejercicio usando express y mongodb
 	npm install
 	npm run dev
 	hay varias rutas

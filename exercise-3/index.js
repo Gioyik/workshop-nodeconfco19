@@ -60,6 +60,9 @@ app.get('/load', async function loadData(req, res, next) {
 });
 
 app.get('/carts/:id', async function getCartsById(req, res, next) {
+	
+
+
 	try {
 		const client = await getConnectionMongo();
 
@@ -71,7 +74,8 @@ app.get('/carts/:id', async function getCartsById(req, res, next) {
 
       const total = results.reduce((a, e) => a += e.price * e.quantity, 0);
 
-      res.send({ total });
+	  res.send({ total })
+	  client.close();
     });
 	} catch (error) {
 		next(error);
